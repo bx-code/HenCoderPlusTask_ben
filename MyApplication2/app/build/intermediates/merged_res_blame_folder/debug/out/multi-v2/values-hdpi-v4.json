@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.bkjk.housekeeper.myapplication.app-mergeDebugResources-19:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/baixiao/.gradle/caches/transforms-3/c2ff7c9771245f51e24e1ebbbbb6516e/transformed/appcompat-1.3.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

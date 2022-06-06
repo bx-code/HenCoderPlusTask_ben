@@ -1,0 +1,30 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id bt_login
+id ed_code
+id ed_password
+id ed_username
+id im_code
+id tv_code
+id tv_password
+id tv_username
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string code
+string codetext
+string password
+string username
+style Theme.MyApplication
+xml backup_rules
+xml data_extraction_rules

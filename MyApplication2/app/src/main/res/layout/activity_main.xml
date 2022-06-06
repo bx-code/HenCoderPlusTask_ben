@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/username"
+        android:id="@+id/tv_username"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/tv_username"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/ed_username"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username"
+        android:text="@string/password"
+        android:id="@+id/tv_password"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/tv_password"
+        app:layout_constraintTop_toBottomOf="@+id/ed_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ed_username"
+        android:layout_marginRight="20dp"
+        android:id="@+id/ed_password"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password"
+        android:text="@string/code"
+        android:id="@+id/tv_code"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/ed_password"
+        app:layout_constraintTop_toBottomOf="@+id/ed_password"
+        app:layout_constraintEnd_toStartOf="@+id/im_code"
+        android:layout_marginRight="20dp"
+        android:id="@+id/ed_code"
+        />
+
+    <com.example.app.widget.CodeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/ed_code"
+        android:id="@+id/im_code"
+        app:layout_constraintTop_toBottomOf="@+id/ed_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/codetext"
+        android:layout_marginRight="20dp"
+        android:textSize="24dp"
+        android:background="@android:color/holo_blue_bright"
+        app:layout_constraintTop_toTopOf="@+id/tv_code"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_login"
+        android:text="登录"
+        app:layout_constraintTop_toBottomOf="@+id/im_code"
+        app:layout_constraintEnd_toEndOf="@+id/ed_password"
+        android:layout_marginTop="10dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
